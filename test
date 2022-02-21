@@ -10,6 +10,7 @@
 <body>
     <img href="assets/img/logo.png">
     <h1> SCMNS <h1>
-    
+    <script src="assets/js/script.js"></script>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">link</a>
 </body>
 </html>
