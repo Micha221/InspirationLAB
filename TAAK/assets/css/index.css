@@ -1,0 +1,57 @@
+/* body { 
+    background-color: #808080;
+} */
+
+.space {
+    background-color: #808080;
+    font-size: 35px;
+    color: white;
+    height: 200px;
+}
+
+#logo {
+    position: absolute;
+    height: 100px;
+    align-items: center;
+}
+
+.button {
+    top: 80px;
+    width: 100px;
+    border-radius: 25px;
+    background-color: #2b6dfc;
+    color: white;
+    /* right: 150px; */
+    position: absolute;
+    height: 75px;
+    padding: 22px;
+}
+
+nav .button{
+    top: 125px;
+    /* margin-left: 50px; */
+    font-size: 25px;
+    /* font-weight: 600; */
+    color: black;
+    text-align: center;
+    display: inline-block;
+}
+
+#kalenderButton{
+    left: 250px;
+    width: 150px;
+}
+
+#OverzichtButton{
+    left: 500px;
+    width: 150px;
+}
+
+#HelpButton{
+    right: 250px;
+}
+
+#InstellingenButton{
+    right: 500px;
+    width: 250px;
+}
