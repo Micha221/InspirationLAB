@@ -21,7 +21,7 @@
                 $birthdate = $_POST["birthdate"];
                 $email = $_POST["email"];
                 $password = $_POST["password"];
-                $gender = $_POST['taskOption'];
+                $gender = $_POST['sexOption'];
                 $isAdmin = 0;
 
                 $getId = "select MAX(User_id) from users";
@@ -29,12 +29,14 @@
 
                 $sqlInsert = "INSERT INTO users (firstname,lastname,birthdate,gender,keyword,isAdmin,email) 
                 VALUES('$firstname','$lastname','$birthdate','$gender','$password','$isAdmin','$email');";
-                if(mysqli_query($conn, $sqlInsert)){
-                    echo "ja";
-                }else{echo"nee";}
+                echo "Welcome " . $firstname;
+                // if(mysqli_query($conn, $sqlInsert)){
+                //     echo "ja";
+                // }else{echo"nee";}
                 ?>
             <br>
-            <input type="submit" value="Home">
+            <br>
+            <input type="submit" value="Home" onclick="window.location.href='index.php'">
         </div>
         <script src="assets-personadded/js/personaddedscript.js"></script>
     </body>

@@ -54,7 +54,7 @@
                 </label>
 
                 <br>
-                <select name="taskOption">
+                <select name="sexOption">
                     <option value="male">male</option>
                     <option value="female">female</option>
                     <option value="x">x</option>
@@ -66,21 +66,23 @@
                     Password
                 </label>
                 <br>
-                <input type="password" name="password" id="form-password" required>
+                <input type="password" name="password" id="password" required>
             </div>
             <br>
-            <div>
+            <!-- <div>
                 <label for="form-passwordRepeat">
                     Confirm password
                 </label>
                 <br>
-                <input type="password" name="Confpassword" id="form-Confpassword" required>
-            </div>
+                <input type="password" name="Confpassword" id="Confpassword" required>
+            </div> -->
             </div>
             <br>
             <button class="button" id="button-accComplete">Create Account</button>
             <br>
             <br>
             <a href="login.php" id="alreadyAccount" >Already have an account? Click here!</a>
+        </form> 
+            <script src="assets/js/registratie.js"></script>
     </body>
 </html>

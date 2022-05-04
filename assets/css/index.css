@@ -1,17 +1,17 @@
-/* body { 
-    background-color: #808080;
-} */
+body { 
+    background-color: lightcyan;
+}
 
 .space {
     background-color: #808080;
     font-size: 35px;
     color: white;
-    height: 200px;
+    height: 150px;
 }
 
 #logo {
     position: absolute;
-    height: 100px;
+    height: 80px;
     align-items: center;
 }
 
@@ -19,7 +19,8 @@
     top: 80px;
     width: 100px;
     border-radius: 25px;
-    background-color: #2b6dfc;
+    background-color: #1E90FF
+    ;
     color: white;
     /* right: 150px; */
     position: absolute;
@@ -28,9 +29,9 @@
 }
 
 nav .button{
-    top: 125px;
+    top: 75px;
     /* margin-left: 50px; */
-    font-size: 25px;
+    font-size: 15px;
     /* font-weight: 600; */
     color: black;
     text-align: center;
@@ -39,12 +40,12 @@ nav .button{
 
 #kalenderButton{
     left: 250px;
-    width: 150px;
+    /* width: 150px; */
 }
 
 #OverzichtButton{
     left: 500px;
-    width: 150px;
+    /* width: 150px; */
 }
 
 #HelpButton{
@@ -54,13 +55,13 @@ nav .button{
 #InstellingenButton{
 
     right: 50px;
-    width: 250px;
+    /* width: 250px; */
     top: 25px;
     position:absolute;
-    border-radius: 25px;
-    background-color: #2b6dfc;
-    height: 50px;
-    width: 75px;
+    /* border-radius: 25px; */
+    background-color: #87CEFA;
+    /* height: 35px; */
+    /* width: 75px; */
 }
 
 #logoutButton{
@@ -69,7 +70,7 @@ nav .button{
     top: 25px;
     position:absolute;
     border-radius: 25px;
-    background-color: #2b6dfc;
+    background-color: #87CEFA;
     height: 50px;
     width: 75px;
 }
@@ -77,4 +78,14 @@ nav .button{
 #AddPersonButton{
     right: 500px;
     width: 200px;
+}
+
+#calendar {
+    background-color: white;
+    top: 50px;
+    position: relative;
+    height: 500px;
+    width: 1250px;
+    left: 100px;
+    right: 100px;
 }
