@@ -1,0 +1,10 @@
+.space {
+    background-color: lightskyblue;
+    font-size: 35px;
+    /* color: white; */
+    height: 100px;
+}
+
+body {
+    background-color: lightblue;
+}

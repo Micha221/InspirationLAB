@@ -17,15 +17,15 @@ body {
 
 .button {
     top: 80px;
-    width: 100px;
-    border-radius: 25px;
+    /* width: 50px; */
+    /* border-radius: 25px; */
     background-color: #1E90FF
     ;
     color: white;
     /* right: 150px; */
     position: absolute;
-    height: 75px;
-    padding: 22px;
+    height: 50px;
+    /* padding: 22px; */
 }
 
 nav .button{
@@ -89,3 +89,26 @@ nav .button{
     left: 100px;
     right: 100px;
 }
+
+/* body {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+}
+
+#calendar {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.response {
+    height: 60px;
+}
+
+.success {
+    background: #cdf3cd;
+    padding: 10px 60px;
+    border: #c3e6c3 1px solid;
+    display: inline-block;
+} */
