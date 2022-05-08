@@ -1,23 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/login.css">
-        <title>Login</title>
-    </head>
-    <body>
-        <div class="space">
-            <h1>Login</h1>
-            <form class="login"> 
-                <h4> email </h4>
-                <input id="emailInput" type="text" name="email" required>
-                <h4> Password </h4>
-                <input id="password" type="password" name="password" required>
-            <button class="button" id="button-login" onclick="location.href='index.php'">Log in</button>
-        </div>
-         <script>  
+<html>  
+<head>  
+    <title>Login</title>  
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>  
+<body>  
+    <div id = "frm">  
+        <h1>Login</h1>  
+        <form name="f1" action = "auth.php" onsubmit = "return validation()" method = "POST">  
+            <p><label> email: </label>  
+                <input type="text" id ="email" name="email" /></p>  
+            <p><label> Password: </label>  
+                <input type="password" id ="password" name="password" />  
+            </p>  
+            <p><input type="submit" id ="btn" value ="Login" /></p>  
+        </form>  
+    </div>
+    <script>  
             function validation()  
             {  
                 var id=document.f1.email.value;  
@@ -39,5 +37,5 @@
                 }                             
             }  
         </script>    
-    </body>
-</html>
+</body>
+</html>  

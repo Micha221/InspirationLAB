@@ -1,0 +1,43 @@
+.header {
+    background-color: #808080;
+    font-size: 35px;
+    color: white;
+    height: 100px;
+}
+
+#logo {
+    height: 100px;
+}
+
+#register-button{
+    top: 25px;
+    width: 90px;
+    border-radius: 25px;
+    background-color: #2b6dfc;
+    color: white;
+    right: 150px;
+    position: absolute;
+    padding: 22px;
+}
+
+#login-button{
+    top: 25px;
+    width: 90px;
+    border-radius: 25px;
+    background-color: #59A6FE
+    ;
+    right: 20px;
+    position: absolute;
+    padding: 22px;
+}
+
+#text{
+    position: absolute;
+    left: 100px;
+    width: 300px;
+    border: 2px solid;
+    border-radius: 25px;
+    border-color: #5BBAFF;
+    padding: 10px;
+    top: 250px;
+}

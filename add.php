@@ -30,9 +30,9 @@
                 $sqlInsert = "INSERT INTO users (firstname,lastname,birthdate,gender,keyword,isAdmin,email) 
                 VALUES('$firstname','$lastname','$birthdate','$gender','$password','$isAdmin','$email');";
                 echo "Welcome " . $firstname;
-                // if(mysqli_query($conn, $sqlInsert)){
-                //     echo "ja";
-                // }else{echo"nee";}
+                if(mysqli_query($conn, $sqlInsert)){
+                    echo "ja";
+                }else{echo"nee";}
                 ?>
             <br>
             <br>

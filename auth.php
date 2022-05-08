@@ -8,11 +8,10 @@
 </head>
 <body>
     <?php      
-        include('db.php');  
+        include('db.php');
         $conn = create_Connection();
         $email = $_POST['email'];  
         $password = $_POST['password'];  
-            
         $sql = "select * from users where email = '$email' and Keyword = '$password'";
         $result = mysqli_query($conn, $sql);  
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
@@ -28,7 +27,7 @@
     <script>
         setTimeout(function() {
         window.location.replace('index.php');
-        }, 5000);
+        }, 3000);
     </script>
 </body>
 </html>
