@@ -10,50 +10,46 @@
         <h1>
             Add person
         </h1>
-        <form method="GET" action="personAdded.html">
+        <form method="GET" action="addP.php">   
         <div>
-            <label for="form-firstname">
-                Firstname
+            <label for="name">
+                Name
             </label>
 <br>
-            <input type="text" name="Firstname" id="Firstname" required>
+            <input type="text" name="name" id="name" required>
         </div>
-<br>
+        <br>
         <div>
-            <label for="form-lastname">
-                Lastname
+            <label for="event">
+                For what event
             </label>
 <br>
-            <input type="text" name="lastname" id="Lastname" required>
+            <input type="text" name="event" id="event" required>
         </div>
 <br>
     <div>
-        <label for="form-dob">
-            Date of birth
+        <label for="birthdate">
+            event date
         </label>
 <br>
-        <input type="date" name="Date of birth" id="form-dob" required>
+        <input type="date" name="birthdate" id="birthdate" required>
     </div>
 <br>
+    <label for="gender">
+                Gender
+            </label>
     <div>
-        <input type="radio" name="Geslacht" value="Female">
-
+        <input type="radio" name="gender" value="Female">
         <label for="form-gender-female" required>
             Female
         </label>
-
     <br>
-
-        <input type="radio" name="Geslacht" value="Male">
-
+        <input type="radio" name="gender" value="Male">
         <label for="form-gender-male">
             Male
         </label>
-
 <br>
-
-        <input type="radio" name="Geslacht" value="Non binary">
-
+        <input type="radio" name="gender" value="Non binary">
         <label for="form-gender-Non binary">
             Non binary 
         </label>
@@ -64,43 +60,43 @@
                Interesses
             </label>
 <br>
-            <input type="checkbox" name="Dieren" id="form-interesses">
-            <label for="form-interesses">
+            <input type="checkbox" name="interests" id="interests" value="dieren">
+            <label for="interests-dieren">
                 Dieren
             </label>
 <br>
-            <input type="checkbox" name="Technologie" id="form-interesses">
-            <label for="form-interesses">
+            <input type="checkbox" name="interests" id="interests" value="dieren">
+            <label for="interests">
                 Technologie
             </label>
 <br>
-            <input type="checkbox" name="Sporten" id="form-interesses">
-            <label for="form-interesses">
+            <input type="checkbox" name="interests" id="interests" value="dieren">
+            <label for="interests">
                 Sporten
             </label>
 <br>
-            <input type="checkbox" name="Muziek" id="form-interesses">
-            <label for="form-interesses">
+            <input type="checkbox" name="interests" id="interests" value="dieren">
+            <label for="interests">
                 Muziek
             </label>
 <br>
-            <input type="checkbox" name="Reizen" id="form-interesses">
-            <label for="form-interesses">
+            <input type="checkbox" name="interests" id="interests" value="dieren">
+            <label for="interests">
                 Reizen
             </label>
 <br>
-            <input type="checkbox" name="Lezen" id="form-interesses">
-            <label for="form-interesses">
+            <input type="checkbox" name="interests" id="interests" value="dieren">
+            <label for="interests">
                 Lezen
             </label>
 <br>
-            <input type="checkbox" name="Kunst" id="form-interesses">
-            <label for="form-interesses">
+            <input type="checkbox" name="interests" id="interests" value="dieren">
+            <label for="interests">
                 Kunst
             </label>
 <br>
-            <input type="checkbox" name="Fotografie" id="form-interesses">
-            <label for="form-interesses">
+            <input type="checkbox" name="interests" id="interests" value="dieren">
+            <label for="interests">
                 Fotografie
             </label>
         </div>
@@ -110,96 +106,94 @@
                 Hobbies
             </label>
 <br>
-            <input type="checkbox" name="Voetbal" id="form-hobbies">
-            <label for="form-hobbies-voetbal">
+            <input type="checkbox" name="hobby" id="hobby" value="dieren">
+            <label for="hobby-voetbal">
                 Voetbal
             </label>
 <br>
-            <input type="checkbox" name="Fietsen" id="form-hobbies">
-            <label for="form-hobbies-fietsen">
+            <input type="checkbox" name="hobby" id="hobby" value="dieren">
+            <label for="hobby-fietsen">
                 Fietsen
             </label>
 <br>
-            <input type="checkbox" name="Tennis" id="form-hobbies">
-            <label for="form-hobbies-tennis">
+            <input type="checkbox" name="hobby" id="hobby" value="Tennis">
+            <label for="hobby-tennis">
                 Tennis
             </label>
 <br>
-            <input type="checkbox" name="Badminton" id="form-hobbies">
-            <label for="form-hobbies-badminton">
+            <input type="checkbox" name="hobby" id="hobby" value="Badminton">
+            <label for="hobby-badminton">
                 Badminton
             </label>
 <br>
-            <input type="checkbox" name="Fitness" id="form-hobbies">
-            <label for="form-hobbies-fitness">
+            <input type="checkbox" name="hobby" id="hobby" value="Fitness"> 
+            <label for="hobby-fitness">
                 Fitness
             </label>
 <br>
-            <input type="checkbox" name="Dansen" id="form-hobbies">
-            <label for="form-hobbies-dansen">
+            <input type="checkbox" name="hobby" id="hobby" value="Dansen">
+            <label for="hobby-dansen">
                 Dansen
             </label>
 <br>
-            <input type="checkbox" name="Zwemmen" id="form-hobbies">
-            <label for="form-hobbies-zwemmen">
+            <input type="checkbox" name="hobby" id="hobby" value="Zwemmen">
+            <label for="hobby-zwemmen">
                 Zwemmen
             </label>
 <br>
-            <input type="checkbox" name="Mindfulness" id="form-hobbies">
-            <label for="form-hobbies-mindfulness">
+            <input type="checkbox" name="hobby" id="hobby" value="Mindfulness">
+            <label for="hobby-mindfulness">
               Mindfulness  
             </label>
 <br>
-            <input type="checkbox" name="Yoga" id="form-hobbies">
-            <label for="form-hobbies-yoga">
+            <input type="checkbox" name="hobby" id="hobby" value="Yoga">
+            <label for="hobby-yoga">
                 Yoga
             </label>
 <br>
-            <input type="checkbox" name="Tuinieren" id="form-hobbies">
-            <label for="form-hobbies-tuinieren">
+            <input type="checkbox" name="hobby" id="hobby" value="Tuinieren">
+            <label for="hobby-tuinieren">
                 Tuinieren
             </label>
 <br>
-            <input type="checkbox" name="Tekenen" id="form-hobbies">
-            <label for="form-hobbies-tekenen">
+            <input type="checkbox" name="hobby" id="hobby" value="Tekenen">
+            <label for="hobby-tekenen">
                 Tekenen
             </label>
 <br>
-            <input type="checkbox" name="Koken" id="form-hobbies">
-            <label for="form-hobbies-koken">
+            <input type="checkbox" name="hobby" id="hobby" value="Koken">
+            <label for="hobby-koken">
                 Koken
             </label>
 <br>
-            <input type="checkbox" name="Instrument bespelen" id="form-hobbies">
-            <label for="form-hobbies-instrument">
+            <input type="checkbox" name="hobby" id="hobby" value="Instrument">
+            <label for="hobby-instrument">
                 Instrument bespelen
             </label>
 <br>
-            <input type="checkbox" name="Gamen" id="form-hobbies">
-            <label for="form-hobbies-gamen">
+            <input type="checkbox" name="hobby" id="hobby" value="Gamen">
+            <label for="hobby-gamen">
                 Gamen
             </label>
 <br>
-            <input type="checkbox" name="DIY" id="form-hobbies">
-            <label for="form-hobbies-diy">
+            <input type="checkbox" name="hobby" id="hobby" value="Doe het zelver">
+            <label for="hobby-diy">
                 Doe het zelver
             </label>
 <br>
-            <input type="checkbox" name="Handwerk" id="form-hobbies">
-            <label for="form-hobbies-handwerk">
+            <input type="checkbox" name="hobby" id="hobby" value="Handwerk">
+            <label for="hobby-handwerk">
                 Handwerk
             </label>
 <br>
-            <input type="checkbox" name="Andere" id="form-hobbies">
-            <label for="form-hobbies-andere">
+            <input type="checkbox" name="hobby" id="hobby" value="andere">
+            <label for="hobby-andere">
                 Andere
             </label>
 <br>
         </div>
 <br>        
-        <button type="submit" onclick="window.location.href='index.php'">
-            Add person 
-         </button>
+            <input type="submit" name="submit" Value="Submit"/>
     </form>
     </body>
 </html>
