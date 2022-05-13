@@ -27,7 +27,7 @@
     <script>
         setTimeout(function() {
         window.location.replace('index.php');
-        }, 3000);
+        }, 5000);
     </script>
 </body>
 </html>
