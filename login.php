@@ -12,7 +12,8 @@
             <p><label> Password: </label>  
                 <input type="password" id ="password" name="password" />  
             </p>  
-            <p><input type="submit" id ="btn" value ="Login" /></p>  
+            <p><input type="submit" id ="btn" value ="Login" /></p>
+            <a href="register.php" onclick> Don't have an account? Click here to make one! </a> 
         </form>  
     </div>
     <script>  
@@ -38,4 +39,4 @@
             }  
         </script>    
 </body>
-</html>  
+</html>

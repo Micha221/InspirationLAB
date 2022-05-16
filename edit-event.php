@@ -1,5 +1,6 @@
 <?php
 require_once "db.php";
+$conn = Create_connection();
 
 $id = $_POST['id'];
 $title = $_POST['title'];

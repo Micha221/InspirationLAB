@@ -1,3 +1,7 @@
+<?php
+    include "db.php";
+    $conn = Create_Connection();
+?>
 <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -13,7 +17,7 @@
 
             <div class="info">
                 <?php
-                    echo $lastname;
+                    
                 ?>
 
 

@@ -7,27 +7,34 @@
     <title>Document</title>
 </head>
 <body>
-    <?php      
+    <?php
         include('db.php');
         $conn = create_Connection();
-        $email = $_POST['email'];  
-        $password = $_POST['password'];  
+        $email = $_POST['email'];
+        $password = $_POST['password'];
         $sql = "select * from users where email = '$email' and Keyword = '$password'";
-        $result = mysqli_query($conn, $sql);  
-        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
-        $count = mysqli_num_rows($result);  
-            
-        if($count == 1){  
-            echo "<h1><center> Login successful </center></h1>";  
-        }  
-        else{  
-            echo "<h1> Login failed. Invalid username or password.</h1>";  
-        }  
-    ?>  
+        $result = mysqli_query($conn, $sql);
+        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+        $count = mysqli_num_rows($result);
+
+        if($count == 1){
+            echo "<h1><center> Login successful </center></h1>";
+        }
+        else{
+            echo "<h1><center> Login failed. Invalid username or password.</center></h1>";
+        }
+    ?>
     <script>
         setTimeout(function() {
         window.location.replace('index.php');
         }, 5000);
+        if(document.querySelector("h1").innerHTML == "<center> Login successful </center>"){
+            setTimeout(function() {
+        window.location.replace('index.php');
+        }, 3000);}
+        else {setTimeout(function() {
+        window.location.replace('login.php');
+        }, 3000);}
     </script>
 </body>
 </html>

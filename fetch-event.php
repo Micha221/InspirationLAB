@@ -1,6 +1,6 @@
 <?php
     require_once "db.php";
-
+    $conn = Create_connection();
     $json = array();
     $sqlQuery = "SELECT * FROM calendar ORDER BY id";
 
