@@ -1,10 +1,6 @@
 <?php 
     include 'db.php';
     session_start();
-
-    if (!isset($_SESSION['email'])) {
-        header("Location: home.php");
-    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
