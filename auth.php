@@ -9,25 +9,26 @@
 <body>
     <?php
         include('db.php');
+        ob_start();
+        session_start();
         $conn = create_Connection();
         $email = $_POST['email'];
         $password = $_POST['password'];
-        $sql = "select * from users where email = '$email' and Keyword = '$password'";
+        $sql = "select * from users where email = '$email'";
         $result = mysqli_query($conn, $sql);
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
         $count = mysqli_num_rows($result);
-
+        
         if($count == 1){
-            echo "<h1><center> Login successful </center></h1>";
+            if(password_verify($password, $row['Keyword'])){
+                echo "<h1><center> Login successful </center></h1>";
+            }else{echo "<h1><center> Login failed. Invalid username or password.</center></h1>";}
         }
         else{
             echo "<h1><center> Login failed. Invalid username or password.</center></h1>";
         }
     ?>
     <script>
-        setTimeout(function() {
-        window.location.replace('index.php');
-        }, 5000);
         if(document.querySelector("h1").innerHTML == "<center> Login successful </center>"){
             setTimeout(function() {
         window.location.replace('index.php');
