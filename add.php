@@ -21,6 +21,7 @@
                 $birthdate = $_POST["birthdate"];
                 $email = $_POST["email"];
                 $password = $_POST["password"];
+                $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
                 $gender = $_POST['sexOption'];
                 $isAdmin = 0;
 
@@ -28,11 +29,10 @@
 
 
                 $sqlInsert = "INSERT INTO users (firstname,lastname,birthdate,gender,keyword,isAdmin,email) 
-                VALUES('$firstname','$lastname','$birthdate','$gender','$password','$isAdmin','$email');";
-                echo "Welcome " . $firstname;
-                // if(mysqli_query($conn, $sqlInsert)){
-                //     echo "ja";
-                // }else{echo"nee";}
+                VALUES('$firstname','$lastname','$birthdate','$gender','$hashedPassword','$isAdmin','$email');";
+                 if(mysqli_query($conn, $sqlInsert)){
+                     echo "Account succesfully created";}
+                else{echo"Something went wrong on our side";}
                 ?>
             <br>
             <br>
