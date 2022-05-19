@@ -18,14 +18,6 @@
 <br>
             <input type="text" name="name" id="name" required>
         </div>
-        <br>
-        <div>
-            <label for="event">
-                For what event
-            </label>
-<br>
-            <input type="text" name="event" id="event" required>
-        </div>
 <br>
     <div>
         <label for="birthdate">
@@ -57,141 +49,11 @@
 <br>        
         <div>
             <label>
-               Interesses
+               Interest: 
+               <input type="text" name="interest" id="interest" required>
             </label>
 <br>
-            <input type="checkbox" name="interests" id="interests" value="dieren">
-            <label for="interests-dieren">
-                Dieren
-            </label>
-<br>
-            <input type="checkbox" name="interests" id="interests" value="dieren">
-            <label for="interests">
-                Technologie
-            </label>
-<br>
-            <input type="checkbox" name="interests" id="interests" value="dieren">
-            <label for="interests">
-                Sporten
-            </label>
-<br>
-            <input type="checkbox" name="interests" id="interests" value="dieren">
-            <label for="interests">
-                Muziek
-            </label>
-<br>
-            <input type="checkbox" name="interests" id="interests" value="dieren">
-            <label for="interests">
-                Reizen
-            </label>
-<br>
-            <input type="checkbox" name="interests" id="interests" value="dieren">
-            <label for="interests">
-                Lezen
-            </label>
-<br>
-            <input type="checkbox" name="interests" id="interests" value="dieren">
-            <label for="interests">
-                Kunst
-            </label>
-<br>
-            <input type="checkbox" name="interests" id="interests" value="dieren">
-            <label for="interests">
-                Fotografie
-            </label>
-        </div>
-<br>
-        <div>
-            <label>
-                Hobbies
-            </label>
-<br>
-            <input type="checkbox" name="hobby" id="hobby" value="dieren">
-            <label for="hobby-voetbal">
-                Voetbal
-            </label>
-<br>
-            <input type="checkbox" name="hobby" id="hobby" value="dieren">
-            <label for="hobby-fietsen">
-                Fietsen
-            </label>
-<br>
-            <input type="checkbox" name="hobby" id="hobby" value="Tennis">
-            <label for="hobby-tennis">
-                Tennis
-            </label>
-<br>
-            <input type="checkbox" name="hobby" id="hobby" value="Badminton">
-            <label for="hobby-badminton">
-                Badminton
-            </label>
-<br>
-            <input type="checkbox" name="hobby" id="hobby" value="Fitness"> 
-            <label for="hobby-fitness">
-                Fitness
-            </label>
-<br>
-            <input type="checkbox" name="hobby" id="hobby" value="Dansen">
-            <label for="hobby-dansen">
-                Dansen
-            </label>
-<br>
-            <input type="checkbox" name="hobby" id="hobby" value="Zwemmen">
-            <label for="hobby-zwemmen">
-                Zwemmen
-            </label>
-<br>
-            <input type="checkbox" name="hobby" id="hobby" value="Mindfulness">
-            <label for="hobby-mindfulness">
-              Mindfulness  
-            </label>
-<br>
-            <input type="checkbox" name="hobby" id="hobby" value="Yoga">
-            <label for="hobby-yoga">
-                Yoga
-            </label>
-<br>
-            <input type="checkbox" name="hobby" id="hobby" value="Tuinieren">
-            <label for="hobby-tuinieren">
-                Tuinieren
-            </label>
-<br>
-            <input type="checkbox" name="hobby" id="hobby" value="Tekenen">
-            <label for="hobby-tekenen">
-                Tekenen
-            </label>
-<br>
-            <input type="checkbox" name="hobby" id="hobby" value="Koken">
-            <label for="hobby-koken">
-                Koken
-            </label>
-<br>
-            <input type="checkbox" name="hobby" id="hobby" value="Instrument">
-            <label for="hobby-instrument">
-                Instrument bespelen
-            </label>
-<br>
-            <input type="checkbox" name="hobby" id="hobby" value="Gamen">
-            <label for="hobby-gamen">
-                Gamen
-            </label>
-<br>
-            <input type="checkbox" name="hobby" id="hobby" value="Doe het zelver">
-            <label for="hobby-diy">
-                Doe het zelver
-            </label>
-<br>
-            <input type="checkbox" name="hobby" id="hobby" value="Handwerk">
-            <label for="hobby-handwerk">
-                Handwerk
-            </label>
-<br>
-            <input type="checkbox" name="hobby" id="hobby" value="andere">
-            <label for="hobby-andere">
-                Andere
-            </label>
-<br>
-        </div>
+
 <br>        
             <input type="submit" name="submit" Value="Submit"/>
     </form>

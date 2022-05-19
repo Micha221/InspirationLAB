@@ -1,6 +1,5 @@
-<?php 
-    include 'db.php';
-    session_start();
+<?php
+    // $conn = Create_Connection();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,13 +25,43 @@
         <nav>
             <!-- <button class="button" id="kalenderButton" onclick="window.location.href='Kalender.php'">Kalender</button> -->
             <!-- <button class="button" id="OverzichtButton" onclick="window.location.href='Overzicht.php'">Overzicht</button> -->
-            <!-- <button class="button" id="HelpButton"onclick="window.location.href='Help.php'">Help</button> -->
-            <button class="button" id="AddPersonButton"onclick="window.location.href='AddPerson.php'">Add Person</button>
+            <button class="button" id="HelpButton"onclick="window.location.href='AddPerson.php'">Help</button>
+            <button class="button" id="AddPersonButton" onclick=openForm()>Add Event</button>
+            <button window="onclick="window.location.href="AddPerson.php" id="personaddbutton"> Add Person </button>
             <button id="InstellingenButton" onclick="window.location.href='settings.php'">Settings</button>
             <button id="logoutButton" onclick="window.location.href='logout.php'">Log out</button>
         </nav>
     </div>
+
+    <div class="form-popup" id="myForm">
+        <form action="add-event.php" class="form-container" method="GET">
+            <h1>Add Event</h1>
     
+            <label for="event-name"><b>Event Name</b></label>
+        <br>
+                <input type="text" id="title" placeholder="Enter Event name" name="title" required>
+        <br>
+        <br>
+            <label for="date"><b>Event date</b></label>
+        <br>
+                <input type="date" id="date" name="birthdate" required>
+        <br>
+
+<br>        
+    <br>
+    <button type="submit" value="submit" class="btn" id="addEventButtonPopup">Add event</button>
+    <br>
+    <br>
+    <button type="submit" class="btn cancel" id="cancelEventButtonPopup" onclick="closeForm()">Cancel</button>
+  </form>
+
+  
+</div>
+
+
+
+        </form>
+    </div>
     <div class="response"></div>
     <div id='calendar'></div>
     <script src="assets/js/index.js"></script>

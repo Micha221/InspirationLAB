@@ -18,20 +18,21 @@
                 $name =  $_GET["name"];
                 $birthdate = $_GET["birthdate"];
                 $gender = $_GET['gender'];
-                $event = $_GET['event'];
-                $interest = $_GET['interests'];
-                $hobby = $_GET['hobby'];
+                $interest = $_GET['interest'];
+                // $event = $_GET['event'];
+                // $interest = $_GET['interests'];
+                // $hobby = $_GET['hobby'];
 
                 echo $name. "<br>";
                 echo $birthdate. "<br>";
                 echo $gender. "<br>";
                 echo $interest . "<br>";
                 echo $event. "<br>";
-                echo $hobby. "<br>";
+                // echo $hobby. "<br>";
 
-                $sqlInsert = "INSERT INTO gift_for (fname,interests,hobbies,event_date,event_name,sex) 
-                VALUES('$name','$interest','$hobby','$birthdate','$event','$gender');";
-                if(mysqli_query($conn, $sqlInsert)){
+                $sqlInsertion = "INSERT INTO gift_for (fname,event_date,sex,interest, fromUser) 
+                VALUES('$name','$birthdate','$gender','$interest','1');";
+                if(mysqli_query($conn, $sqlInsertion)){
                         echo "ja";
                     }else{echo"nee";}
                 ?>

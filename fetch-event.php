@@ -2,7 +2,7 @@
     require_once "db.php";
     $conn = Create_connection();
     $json = array();
-    $sqlQuery = "SELECT * FROM calendar ORDER BY id";
+    $sqlQuery = "SELECT * FROM calendar Where fromUser = 1";
 
     $result = mysqli_query($conn, $sqlQuery);
     $eventArray = array();
