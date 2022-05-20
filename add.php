@@ -33,6 +33,9 @@
                  if(mysqli_query($conn, $sqlInsert)){
                      echo "Account succesfully created";}
                 else{echo"Something went wrong on our side";}
+                // if(mysqli_query($conn, $sqlInsert)){
+                //     echo "ja";
+                // }else{echo"nee";}
                 ?>
             <br>
             <br>

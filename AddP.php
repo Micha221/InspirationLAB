@@ -27,17 +27,17 @@
                 echo $birthdate. "<br>";
                 echo $gender. "<br>";
                 echo $interest . "<br>";
-                echo $event. "<br>";
+                // echo $event. "<br>";
                 // echo $hobby. "<br>";
 
                 $sqlInsertion = "INSERT INTO gift_for (fname,event_date,sex,interest, fromUser) 
                 VALUES('$name','$birthdate','$gender','$interest','1');";
-                if(mysqli_query($conn, $sqlInsertion)){
-                        echo "ja";
-                    }else{echo"nee";}
+                // if(mysqli_query($conn, $sqlInsertion)){
+                //         echo "ja";
+                //     }else{echo"nee";}
                 ?>
             <br>
-            <input type="submit" value="Home">
+            <input type="submit" value="Home" onclick="window.location.href='index.php'">
         </div>
         <script src="assets-personadded/js/personaddedscript.js"></script>
     </body>
