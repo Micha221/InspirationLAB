@@ -1,3 +1,4 @@
+<?php
 session_start();
 
 $username = $_POST['username'];
@@ -7,17 +8,17 @@ $submit = $_POST['submit'];
 if($submit){
 if($username&&$password){ // Hier wordt gecontroleerd of alles klopt, wanneer dit goed is, voert hij de code hieronder uit!
 
-$connect /* Zet variabele connect / = mysql_connect("localhost", "root") or die ("Kan geen verbinden maken met Database") / naar mysql_connect/ ;
-mysql_select_db("portfolio2") or die ("Database niet gevonden");
+$connect /* Zet variabele connect */ = mysqli_connect("localhost", "root") or die ("Kan geen verbinden maken met Database") /* naar mysql_connect */ ;
+mysqli_select_db("gopresent") or die ("Database niet gevonden");
 
-$query = mysql_query("SELECT FROM users WHERE username='$username'");
+$query = mysqli_query("SELECT FROM users WHERE username='$username'"); // moet aangepast worden aan eigen database
 
-$numrows = mysql_num_rows($query);
+$numrows = mysqli_num_rows($query);
 
 if($numrows !=0){
 
 //code to login
-while ($row = mysql_fetch_assoc($query)){
+while ($row = mysqli_fetch_assoc($query)){
 $dbusername = $row['username'];
 $dbpassword = $row['password'];
 }
@@ -38,3 +39,5 @@ echo "Voer alsjeblieft het formulier in!";
 
 
 }
+
+?>
