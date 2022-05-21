@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$username = $_POST['username'];
+$username = $_POST['firstname'];
 $password = $_POST['password'];
 $submit = $_POST['submit'];
 
@@ -11,7 +11,7 @@ if($username&&$password){ // Hier wordt gecontroleerd of alles klopt, wanneer di
 $connect /* Zet variabele connect */ = mysqli_connect("localhost", "root") or die ("Kan geen verbinden maken met Database") /* naar mysql_connect */ ;
 mysqli_select_db("gopresent") or die ("Database niet gevonden");
 
-$query = mysqli_query("SELECT FROM users WHERE username='$username'"); // moet aangepast worden aan eigen database
+$query = mysqli_query("SELECT FROM users WHERE firstname='$username'"); 
 
 $numrows = mysqli_num_rows($query);
 
@@ -19,7 +19,7 @@ if($numrows !=0){
 
 //code to login
 while ($row = mysqli_fetch_assoc($query)){
-$dbusername = $row['username'];
+$dbusername = $row['firstname'];
 $dbpassword = $row['password'];
 }
 
