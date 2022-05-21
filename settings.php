@@ -48,7 +48,7 @@
                     </div>
                     <br>
                     <div class="changeinfo">
-                    <?php echo "password:"?>   <input type="password" id="currentPassword" name="password">
+                    <?php echo "current password:"?>   <input type="password" id="currentPassword" name="password">
                     </div>
                     <br>
                     <div class="changeinfo">
