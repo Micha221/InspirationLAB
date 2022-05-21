@@ -36,15 +36,23 @@
                     <br>
                     
                     <div class="changeinfo">
-                        <?php echo "lastname: " ?>  <input type="text" id="changelastname" name="lastname" value="<?php echo $_SESSION['lastname'];?>">
+                        <?php echo "lastname:"?>  <input type="text" id="changelastname" name="lastname" value="<?php echo $_SESSION['lastname'];?>">
                     </div>
                     <br>
                     <div class="changeinfo">
-                        <?php echo "email: " ?> <input type="text" id="changeemail" name="email"  value="<?php echo $_SESSION['email'];?>"">
+                        <?php echo "email:"?> <input type="text" id="changeemail" name="email"  value="<?php echo $_SESSION['email'];?>"">
                     </div>
                     <br>
                     <div class="changeinfo">
-                    <?php echo "birthdate: " ?>   <input type="text" id="changebirthdate" name="birthdate"  value="<?php echo $_SESSION['birthdate'];?>"">
+                    <?php echo "birthdate:"?>   <input type="text" id="changebirthdate" name="birthdate"  value="<?php echo $_SESSION['birthdate'];?>"">
+                    </div>
+                    <br>
+                    <div class="changeinfo">
+                    <?php echo "password:"?>   <input type="password" id="currentPassword" name="password">
+                    </div>
+                    <br>
+                    <div class="changeinfo">
+                    <?php echo "new password:"?>   <input type="password" id="newPassword" name="newPassword">
                     </div>
                     <br>
                     <div class="changeinfo">
