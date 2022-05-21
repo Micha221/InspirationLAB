@@ -22,7 +22,10 @@
                 $birthdate = $_POST["birthdate"];
                 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
                 $id = $_SESSION['User_ID'];
-
+                $_SESSION['firstname'] = $firstname;
+                $_SESSION['lastname'] = $lastname;
+                $_SESSION['birthdate'] = $birthdate;
+                $_SESSION['email'] = $email;
 
                 $sqlInsert = "UPDATE users SET firstname = '$firstname', lastname= '$lastname', email = '$email', birthdate = '$birthdate' WHERE User_ID = '$id';";
                  if(mysqli_query($conn, $sqlInsert)){
