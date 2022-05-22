@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+} 
+
+.space{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    width: 475px;
+    height: 650px;
+    background-color: rgb(165, 165, 165);
+}
+
+.button{
+    background-color: lightblue;
+    height: 75px;
+    width: 250px;
+    bottom: -100px;
+    border-radius: 25px;
+    align-items: center;
+    right: 65px;
+}
