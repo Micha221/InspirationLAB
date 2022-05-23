@@ -1,5 +1,6 @@
-<?php
-    // $conn = Create_Connection();
+<?php 
+    include 'db.php';
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,12 +16,12 @@
     <script src="assets/js/index.js"></script>
 
     <title>GoPresent</title>
-
 </head>
 <body>
+    <div class="trying">
     <div class="space">
         <div>  
-            <img src="assets/img/logo.png" id="logo">
+            <img src="assets/img/logo.png" id="logo" onclick="window.location.href='index.php'">
         </div>
         <nav>
             <!-- <button class="button" id="kalenderButton" onclick="window.location.href='Kalender.php'">Kalender</button> -->
@@ -28,11 +29,13 @@
             <button class="button" id="HelpButton"onclick="window.location.href='help.php'">Help</button>
             <button class="button" id="AddEventButton" onclick=openForm()>Add Event</button>
             <button class="button" id="AddPersonButton"onclick="window.location.href='AddPerson.php'">Add Person</button>
+            <button class="button" id="ListAddedPersons" onclick="window.location.href='ListAddedPersons.php'">Added Persons</button>
             <button id="InstellingenButton" onclick="window.location.href='settings.php'">Settings</button>
             <button id="logoutButton" onclick="window.location.href='logout.php'">Log out</button>
         </nav>
-    </div>
-
+    </div><?php
+    echo "<h1><center> Goeiendag ".$_SESSION['Name']. " User ID: " .$_SESSION['User_ID']. "</center></h1>"
+    ?>
     <div class="form-popup" id="myForm">
         <form action="add-event.php" class="form-container" method="GET">
             <h1>Add Event</h1>
@@ -46,24 +49,18 @@
         <br>
                 <input type="date" id="date" name="date" required>
         <br>
-
 <br>        
     <br>
     <button type="submit" value="submit" class="btn" id="addEventButtonPopup">Add event</button>
     <br>
     <br>
     <button type="submit" class="btn cancel" id="cancelEventButtonPopup" onclick="closeForm()">Cancel</button>
-  </form>
-
-  
+  </form> 
 </div>
-
-
-
-        </form>
-    </div>
+    
     <div class="response"></div>
     <div id='calendar'></div>
     <script src="assets/js/index.js"></script>
+    </div>
 </body>
 </html>
