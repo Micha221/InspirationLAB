@@ -1,0 +1,123 @@
+body { 
+    color: white;
+}
+
+/*.space {
+    background-color: rgb(165, 165, 165);
+    font-size: 35px;
+    color: white;
+    height: 100px;
+} */
+
+.trying {
+    background-image: url(achtergrondmog1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#logo {
+    position: absolute;
+    height: 100px;
+    align-items: center;
+}
+
+.button {
+    top: 80px;
+    /* width: 50px; */
+    /* border-radius: 25px; */
+    background-color: lightblue;
+    color: white;
+    /* right: 150px; */
+    position: absolute;
+    height: 50px;
+    /* padding: 22px; */
+}
+
+nav .button{
+    top: 35px;
+    /* margin-left: 50px; */
+    font-size: 15px;
+    /* font-weight: 600; */
+    color: black;
+    text-align: center;
+    display: inline-block;
+}
+
+#kalenderButton{
+    left: 350px;
+    border-radius: 25px;
+    /* width: 150px; */
+}
+
+#OverzichtButton{
+    left: 450px;
+    border-radius: 25px;
+    /* width: 150px; */
+}
+
+#HelpButton{
+    right: 75px;
+    border-radius: 25px;
+}
+
+#InstellingenButton{
+
+    right: 150px;
+    /* width: 250px; */
+    top: 35px;
+    position:absolute;
+    border-radius: 25px;
+    background-color: lightblue;
+    /* height: 35px; */
+    /* width: 75px; */
+}
+
+#logoutButton{
+    right: 150px;
+    width: 250px;
+    top: 25px;
+    position:absolute;
+    border-radius: 25px;
+    background-color: #87CEFA;
+    height: 50px;
+    width: 75px;
+}
+
+#AddPersonButton{
+    right: 500px;
+    width: 200px;
+}
+
+#calendar {
+    background-color: white;
+    top: 50px;
+    position: relative;
+    height: 500px;
+    width: 1250px;
+    left: 100px;
+    right: 100px;
+}
+
+/* body {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+}
+
+#calendar {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.response {
+    height: 60px;
+}
+
+.success {
+    background: #cdf3cd;
+    padding: 10px 60px;
+    border: #c3e6c3 1px solid;
+    display: inline-block;
+} */

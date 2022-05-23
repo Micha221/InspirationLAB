@@ -1,0 +1,50 @@
+.trying {
+    background-image: url(achtergrondmog1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+/*.header {
+    background-color: rgb(165, 165, 165);
+    font-size: 35px;
+    color: white;
+    height: 100px;
+}*/
+
+
+#logo {
+    height: 100px;
+}
+
+#register-button{
+    top: 25px;
+    width: 90px;
+    border-radius: 25px;
+    background-color: lightblue;
+    right: 150px;
+    position: absolute;
+    padding: 22px;
+}
+
+#login-button{
+    top: 25px;
+    width: 90px;
+    border-radius: 25px;
+    background-color: lightblue;
+    right: 35px;
+    position: absolute;
+    padding: 22px;
+}
+
+#text{
+    position: absolute;
+    left: 100px;
+    width: 300px;
+    border: 5px solid;
+    border-radius: 25px;
+    border-color: lightblue;
+    padding: 10px;
+    top: 250px;
+}

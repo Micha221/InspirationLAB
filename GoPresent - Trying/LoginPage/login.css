@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+    color: white;
+}
+
+/*.space{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    width: 475px;
+    height: 500px;
+    background-color: rgb(165, 165, 165);
+}*/
+
+.trying {
+    background-image: url(achtergrondmog1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.login{ 
+    text-align: center;
+    margin-left: 10px;
+}
+
+.button{
+    background-color: lightblue;
+    height: 75px;
+    width: 250px;
+    position: center;
+    bottom: -100px;
+    border-radius: 25px;
+    align-items: center;
+    right: 65px;
+}
+
+#alreadyAccount {
+    position: relative;
+    bottom: -150px;
+    text-align: center;
+    right: 92px;
+}
