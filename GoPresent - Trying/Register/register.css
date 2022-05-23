@@ -17,6 +17,11 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    width: 475px;
+    height: 500px;
 }
 
 .acc-creation{ 
@@ -49,4 +54,8 @@ body {
     text-align: center;
     right: 150px;
     
+}
+
+.link {
+    color: lightblue;
 }
