@@ -14,7 +14,14 @@ body {
     height: 80px;
     align-items: center;
 }
-
+.adminButton{
+    top:75px;
+    position: absolute;
+    height: 50px;
+    visibility: hidden;
+    background-color: blue;
+    right:300px;
+}
 .button {
     top: 80px;
     /* width: 50px; */
