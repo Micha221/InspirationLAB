@@ -37,7 +37,7 @@
     echo "<h1><center> Goeiendag ".$_SESSION['Name']. " User ID: " .$_SESSION['User_ID']. "</center></h1>"
     ?>
     <div class="form-popup" id="myForm">
-        <form action="add-event.php" class="form-container" method="GET">
+        <form action="add-event.php" class="form-container" method="POST">
             <h1>Add Event</h1>
     
             <label for="title"><b>Event Name</b></label>
