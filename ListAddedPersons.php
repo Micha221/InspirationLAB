@@ -15,12 +15,16 @@
         <?php
             $conn = Create_Connection();
             $fromUser = $_SESSION['User_ID'];
-            $sqls = "SELECT fname, event_date, sex, interest from gift_for where fromUser = $fromUser";
+            $sqls = "SELECT * from gift_for where fromUser = $fromUser";
             
             $result = mysqli_query($conn, $sqls);
 
+            foreach ($table as $key => $result) {
+                echo $table['fname'];
+            }
+
             while($table = mysqli_fetch_array($result)) { 
-                echo "name: " . $table['fname'] ."\t". " event_date: " . $table['event_date'] ."\t". "sex: " . $table['sex'] ."\t". "interest: " ."\t". $table['interest'] ;?> <button class="button" id="FindGift">Find Gift</button><br>
+                echo "id: " . $table['gift_id'] ."\t". "name: " . $table['fname'] ."\t". " event_date: " . $table['event_date'] ."\t". "sex: " . $table['sex'] ."\t". "interest: " ."\t". $table['interest'] ;?> <button class="button" onclick='window.location.href="findgift.php"' id="FindGift">Find Gift</button><br>
                 <?php
             }
         ?>

@@ -1,8 +1,10 @@
 <?php
     require_once "db.php";
+    session_start();
     $conn = Create_connection();
     $json = array();
-    $sqlQuery = "SELECT * FROM calendar Where fromUser = 1";
+    $fromUser = $_SESSION['User_ID'];
+    $sqlQuery = "SELECT * FROM calendar Where fromUser = $fromUser";
 
     $result = mysqli_query($conn, $sqlQuery);
     $eventArray = array();

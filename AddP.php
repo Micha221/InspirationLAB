@@ -14,27 +14,33 @@
                 <?php 
                 include "db.php"; 
                 $conn = create_connection();
+                session_start();
                 
                 $name =  $_GET["name"];
                 $birthdate = $_GET["birthdate"];
                 $gender = $_GET['gender'];
                 $interest = $_GET['interest'];
-                // $event = $_GET['event'];
-                // $interest = $_GET['interests'];
-                // $hobby = $_GET['hobby'];
+                $fromUser = $_SESSION['User_ID'];
 
                 echo $name. "<br>";
                 echo $birthdate. "<br>";
                 echo $gender. "<br>";
                 echo $interest . "<br>";
-                // echo $event. "<br>";
-                // echo $hobby. "<br>";
+            
+                $file = fopen("interesse.txt","w");
 
                 $sqlInsertion = "INSERT INTO gift_for (fname,event_date,sex,interest, fromUser) 
-                VALUES('$name','$birthdate','$gender','$interest','1');";
-                // if(mysqli_query($conn, $sqlInsertion)){
-                //         echo "ja";
-                //     }else{echo"nee";}
+                VALUES('$name','$birthdate','$gender','$interest','$fromUser');";
+
+                if (mysqli_query($conn, $sqlInsertion)) {
+
+                    // echo "ja";
+                    fwrite($file, $interest);
+                } else {
+                    // echo"nee";
+                }
+
+                fclose($file);
                 ?>
             <br>
             <input type="submit" value="Home" onclick="window.location.href='index.php'">

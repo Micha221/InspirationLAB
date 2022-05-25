@@ -1,9 +1,7 @@
-
-
 <html>  
 <head>  
     <title>Login</title>  
-    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <link rel = "stylesheet" type = "text/css" href = "assets/css/login.css">
 </head>  
 <body>  
     <div id = "frm">  

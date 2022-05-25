@@ -1,5 +1,6 @@
 <?php
 require_once "db.php";
+session_start();
 $conn = Create_Connection();
 $id = $_POST['id'];
 $sqlDelete = "DELETE from calendar WHERE id=".$id;

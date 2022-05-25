@@ -11,8 +11,10 @@
     <body>
     <?php
         include "db.php"; 
+        session_start();
         $conn = create_connection();
     ?>
+        <div class="trying">
             <div class="space">
             <h1>Register</h1>
             <form method="POST" action="add.php">
@@ -69,13 +71,6 @@
                 <input type="password" name="password" id="password" required>
             </div>
             <br>
-            <!-- <div>
-                <label for="form-passwordRepeat">
-                    Confirm password
-                </label>
-                <br>
-                <input type="password" name="Confpassword" id="Confpassword" required>
-            </div> -->
             </div>
             <br>
             <button class="button" id="button-accComplete">Create Account</button>
@@ -83,6 +78,7 @@
             <br>
             <a href="login.php" id="alreadyAccount" >Already have an account? Click here!</a>
         </form> 
+        </div>
             <script src="assets/js/registratie.js"></script>
     </body>
 </html>
