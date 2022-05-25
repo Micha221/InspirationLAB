@@ -1,6 +1,11 @@
-<?php 
-    include 'db.php';
+<?php
+    include "db.php";
+    $conn = create_Connection();
     session_start();
+    $id = $_SESSION['User_ID'];
+    $sql = "select * from users where User_ID = '$id'";
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +19,6 @@
     <script src="FullCalendar/fullcalendar/lib/moment.min.js"></script>
     <script src="FullCalendar/fullcalendar/fullcalendar.min.js"></script>
     <script src="assets/js/index.js"></script>
-
     <title>GoPresent</title>
 </head>
 <body>
@@ -33,13 +37,16 @@
             <button id="InstellingenButton" onclick="window.location.href='settings.php'">Settings</button>
             <button id="logoutButton" onclick="window.location.href='logout.php'">Log out</button>
         </nav>
-    </div><?php
-    echo "<h1><center> Goeiendag ".$_SESSION['Name']. " User ID: " .$_SESSION['User_ID']. "</center></h1>"
+    </div>
+    <?php
+    $isAdmin = $row['isAdmin'];
+    if($isAdmin == 1){
+        echo "<p>admin</p>";
+    }
     ?>
     <div class="form-popup" id="myForm">
         <form action="add-event.php" class="form-container" method="POST">
             <h1>Add Event</h1>
-    
             <label for="title"><b>Event Name</b></label>
         <br>
                 <input type="text" id="title" placeholder="Enter Event name" name="title" required>
@@ -60,7 +67,11 @@
     
     <div class="response"></div>
     <div id='calendar'></div>
-    <script src="assets/js/index.js"></script>
+    <script>
+        if(document.querySelector("p").innerHTML == "admin"){
+            document.querySelector(".adminButton").style.visibility = "visible";
+        }
+    </script>
     </div>
 </body>
 </html>
