@@ -10,3 +10,5 @@ function createEvent(startDate, title, endDate) {
 
   events.push(event);
 }
+
+window.location.replace("index.php")

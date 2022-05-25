@@ -75,3 +75,20 @@ function displayMessage(message) {
 	    $(".response").html("<div class='success'>"+message+"</div>");
     setInterval(function() { $(".success").fadeOut(); }, 1000);
 }
+
+
+window.onload = function() {
+    document.getElementById("myForm").style.display = "none";
+}
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }   
+
+
+var AddEventPopupBtn = document.querySelectorAll("#addEventButtonPopup");
+console.log(location.href);
+
