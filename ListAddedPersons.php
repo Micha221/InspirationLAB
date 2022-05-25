@@ -32,8 +32,6 @@
                 <td><?php echo $row['fname'];?></td>
                 <td><?php echo $row['interest'];?></td>
                 <td><form method="POST"><button id="<?php echo $row['interest'];?>" name="findGift" value="<?php echo $row['interest']?>">Find Gift</button></td></form>
-                <br>
-                <br>
             </tr>
             <?php endwhile;?>
         </table>    
