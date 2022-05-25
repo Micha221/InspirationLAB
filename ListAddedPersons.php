@@ -1,9 +1,22 @@
+<?php
+    include "db.php";
+    $conn = create_Connection();
+    session_start();
+    $id = $_SESSION['User_ID'];
+    $sql = "select * from gift_for;";
+    $result = mysqli_query($conn, $sql);
+    $searchTerm = $_POST['findGift'];
+    $sqls = "SELECT product_name, product_price, ProductURL, searchTerm, ImageURL FROM products WHERE searchTerm = $searchTerm";
+    $results = mysqli_query($conn,$sqls);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
         <title>Document</title>
     </head>
     <body>
@@ -23,13 +36,13 @@
                 <br>
             </tr>
             <?php endwhile;?>
-        </table>
+        </table>    
     </div>
     <?php 
         if (isset($_POST["findGift"]))
         {
             $findGift =  $_POST["findGift"];
-            $sql = "DELETE FROM users WHERE users.User_ID = $deleteID";
+            $sql = "DELETE FROM users WHERE `users`.`User_ID` = $deleteID";
             $result = mysqli_query($conn, $sql);
             $interesseFile = fopen("interest.txt", "w");
             fwrite($interesseFile, $findGift);
@@ -41,7 +54,7 @@
 <br>
     <?php
     $searchTerm = $_POST['findGift'];
-$sqls = "SELECT product_name, product_price, ProductURL, searchTerm, ImageURL FROM products where searchTerm = '$searchTerm'";
+    $sqls = "SELECT product_name, product_price, ProductURL, searchTerm, ImageURL FROM products where searchTerm = '$searchTerm'";
     $results = mysqli_query($conn,$sqls);
     $row = mysqli_fetch_array($results, MYSQLI_ASSOC);
     $productURL = $row['ProductURL'];
@@ -57,9 +70,9 @@ $sqls = "SELECT product_name, product_price, ProductURL, searchTerm, ImageURL FR
         </tr>
         <?php
         if(isset($_POST['findGift']))
-    {
-        shell_exec("python scraper.py");
-    }?>
+	{
+		shell_exec("python scraper.py");
+	}?>
     <script src="assets/js/listaddedpersons.js"></script>
     </body>
 </html>
