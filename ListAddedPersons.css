@@ -1,0 +1,15 @@
+.trying {
+    background-image: url(achtergrondmog1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.button{
+    top: 15px;
+    width: 80px;
+    border-radius: 25px;
+    background-color: lightblue;
+    padding: 20px;
+}
+
