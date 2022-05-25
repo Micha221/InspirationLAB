@@ -27,6 +27,7 @@
         <nav>
             <button class="button" id="HelpButton"onclick="window.location.href='help.php'">Help</button>
             <button class="button" id="AddEventButton" onclick=openForm()>Add Event</button>
+            <button class="button" id="ListAddedPersons" onclick="window.location.href='ListAddedPersons.php'">Added Persons</button>
             <button class="button" id="AddPersonButton"onclick="window.location.href='AddPerson.php'">Add Person</button>
             <button id="logoutButton" onclick="window.location.href='logout.php'">Log out</button>
             <button id="InstellingenButton" onclick="window.location.href='settings.php'">Settings</button>
