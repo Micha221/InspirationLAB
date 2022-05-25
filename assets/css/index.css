@@ -1,7 +1,12 @@
 body { 
     background-color: lightcyan;
 }
-
+.trying{
+    background-image: url(~achtergrondmog1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .space {
     background-color: #808080;
     font-size: 35px;
@@ -14,32 +19,18 @@ body {
     height: 80px;
     align-items: center;
 }
-.adminButton{
-    top:75px;
-    position: absolute;
-    height: 50px;
-    visibility: hidden;
-    background-color: blue;
-    right:300px;
-}
+
 .button {
     top: 80px;
-    /* width: 50px; */
-    /* border-radius: 25px; */
-    background-color: #1E90FF
-    ;
+    background-color: #1E90FF;
     color: white;
-    /* right: 150px; */
     position: absolute;
     height: 50px;
-    /* padding: 22px; */
 }
 
 nav .button{
     top: 75px;
-    /* margin-left: 50px; */
     font-size: 15px;
-    /* font-weight: 600; */
     color: black;
     text-align: center;
     display: inline-block;
@@ -60,25 +51,26 @@ nav .button{
 }
 
 #InstellingenButton{
+    right: 150px;
+    /* width: 250px; */
+    top: 25px;
+    position:absolute;
+    /* border-radius: 25px; */
+    background-color: #87CEFA;
+    height: 35px;
+    width: 75px;
 
+    
+}
+
+#logoutButton{
     right: 50px;
     /* width: 250px; */
     top: 25px;
     position:absolute;
     /* border-radius: 25px; */
     background-color: #87CEFA;
-    /* height: 35px; */
-    /* width: 75px; */
-}
-
-#logoutButton{
-    right: 150px;
-    width: 250px;
-    top: 25px;
-    position:absolute;
-    border-radius: 25px;
-    background-color: #87CEFA;
-    height: 50px;
+    height: 35px; 
     width: 75px;
 }
 
@@ -91,31 +83,42 @@ nav .button{
     background-color: white;
     top: 50px;
     position: relative;
-    height: 500px;
+    /* height: 250px; */
     width: 1250px;
     left: 100px;
     right: 100px;
 }
 
-/* body {
-    margin-top: 50px;
-    text-align: center;
-    font-size: 12px;
-    font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+.form-container{
+    /* position: center; */
+    position: absolute;
+    background-color: white;
+    left: 600px;
+    top: 250px;
+    overflow: hidden;
+    z-index: 999;
+    background-color: lightskyblue;
+    padding: 10px;
+    border: 5px solid blue;
 }
 
-#calendar {
-    width: 700px;
-    margin: 0 auto;
+#personaddbutton{
+    right: 400px;
+    width: 200px;
+
 }
 
-.response {
-    height: 60px;
+#cancelEventButtonPopup{
+    width: 280px;
+    height: 42px;
 }
 
-.success {
-    background: #cdf3cd;
-    padding: 10px 60px;
-    border: #c3e6c3 1px solid;
-    display: inline-block;
-} */
+#AddEventButton{
+    left: 475px;
+    width: 200px;
+    
+}
+
+#ListAddedPersons{
+    right: 325px;
+}
