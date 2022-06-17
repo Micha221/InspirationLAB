@@ -14,36 +14,26 @@
                 <?php 
                 include "db.php"; 
                 $conn = create_connection();
-                session_start();
                 
                 $name =  $_GET["name"];
                 $birthdate = $_GET["birthdate"];
                 $gender = $_GET['gender'];
-                $interest = $_GET['interest'];
-                $fromUser = $_SESSION['User_ID'];
+                $event = $_GET['event'];
+                $interest = $_GET['interests'];
+                $hobby = $_GET['hobby'];
 
                 echo $name. "<br>";
                 echo $birthdate. "<br>";
                 echo $gender. "<br>";
                 echo $interest . "<br>";
-            
-                $file = fopen("interesse.txt","w");
+                echo $event. "<br>";
+                echo $hobby. "<br>";
 
-                $sqlInsertion = "INSERT INTO gift_for (fname,event_date,sex,interest, fromUser) 
-                VALUES('$name','$birthdate','$gender','$interest','$fromUser');";
-
-                if (mysqli_query($conn, $sqlInsertion)) {
-
-                    // echo "ja";
-                    fwrite($file, $interest);
-                } else {
-                    // echo"nee";
-                }
-
-                fclose($file);
+                $sqlInsert = "INSERT INTO gift_for (fname,interests,hobbies,event_date,event_name,sex) 
+                VALUES('$name','$interest','$hobby','$birthdate','$event','$gender');";
                 ?>
             <br>
-            <input type="submit" value="Home" onclick="window.location.href='index.php'">
+            <input type="submit" value="Home">
         </div>
         <script src="assets-personadded/js/personaddedscript.js"></script>
     </body>
