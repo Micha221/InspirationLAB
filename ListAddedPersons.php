@@ -9,7 +9,6 @@
     $sqls = "SELECT product_name, product_price, ProductURL, searchTerm, ImageURL FROM products WHERE searchTerm = $searchTerm";
     $results = mysqli_query($conn,$sqls);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -48,13 +47,13 @@
                 <td><form method="POST"><button id="<?php echo $row['interest'];?>" name="findGift" value="<?php echo $row['interest']?>">Find Gift</button></td></form>
             </tr>
             <?php endwhile;?>
-        </table>    
+        </table>
     </div>
     <?php 
         if (isset($_POST["findGift"]))
         {
             $findGift =  $_POST["findGift"];
-            $sql = "DELETE FROM users WHERE `users`.`User_ID` = $deleteID";
+            $sql = "DELETE FROM users WHERE users.User_ID = $deleteID";
             $result = mysqli_query($conn, $sql);
             $interesseFile = fopen("interest.txt", "w");
             fwrite($interesseFile, $findGift);
@@ -65,7 +64,7 @@
 <br>
     <?php
     $searchTerm = $_POST['findGift'];
-    $sqls = "SELECT product_name, product_price, ProductURL, searchTerm, ImageURL FROM products where searchTerm = '$searchTerm'";
+$sqls = "SELECT product_name, product_price, ProductURL, searchTerm, ImageURL FROM products where searchTerm = '$searchTerm'";
     $results = mysqli_query($conn,$sqls);
     $row = mysqli_fetch_array($results, MYSQLI_ASSOC);
     $productURL = $row['ProductURL'];
@@ -81,9 +80,9 @@
         </tr>
         <?php
         if(isset($_POST['findGift']))
-	{
-		shell_exec("python scraper.py");
-	}?>
+    {
+        shell_exec("python scraper.py");
+    }?>
     <script src="assets/js/listaddedpersons.js"></script>
     </body>
 </html>
