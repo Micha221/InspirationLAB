@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+    color: white;
+} 
+
+
+/*.space{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    width: 475px;
+    height: 650px;
+    background-color: rgb(165, 165, 165);
+}*/
+
+body {
+    background-image: url(achtergrondmog1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    width: 475px;
+    height: 500px;
+}
+
+.button{
+    background-color: lightblue;
+    height: 75px;
+    width: 250px;
+    bottom: -100px;
+    border-radius: 25px;
+    align-items: center;
+    right: 65px;
+}

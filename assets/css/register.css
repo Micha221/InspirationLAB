@@ -1,0 +1,44 @@
+body { 
+    background-image: url(achtergrondmog1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.trying {
+    
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    width: 475px;
+    height: 500px;
+}
+
+.acc-creation{ 
+    text-align: center;
+    margin-left: 10px;
+}
+
+
+.button{
+    background-color: lightblue;
+    height: 75px;
+    width: 250px;
+    bottom: -100px;
+    border-radius: 25px;
+    align-items: center;
+    right: 65px;
+}
+
+#alreadyAccount {
+    bottom: -150px;
+    text-align: center;
+    right: 150px;
+    
+}
+a{
+    color:white;
+}
+.link {
+    color: lightblue;
+}
